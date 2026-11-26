@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Error>
+  <Code>NoSuchKey</Code>
+  <Message>The specified key does not exist.</Message>
+  <RequestId>6B07F406D6C2B53437F7DFAE</RequestId>
+  <HostId>npmmirror.oss-cn-shanghai.aliyuncs.com</HostId>
+  <Key>binaries/tauri-cli/v2.12.6/tauri-cli_v2.12.6_x86_64-apple-darwin.tar.gz</Key>
+  <EC>0026-00000001</EC>
+  <RecommendDoc>https://api.aliyun.com/troubleshoot?q=0026-00000001</RecommendDoc>
+</Error>
