@@ -27,7 +27,7 @@ fn run_ci() -> Result<()> {
     println!("Running CI gates...");
 
     // Gate 1: Rust compilation
-    println!("[1/3] Checking Rust compilation...");
+    println!("[1/4] Checking Rust compilation...");
     let status = Command::new("cargo")
         .arg("check")
         .status()?;
@@ -37,8 +37,21 @@ fn run_ci() -> Result<()> {
     }
     println!("PASS: Rust compilation");
 
-    // Gate 2: Tauri build (debug)
-    println!("[2/3] Checking Tauri debug build...");
+    // Gate 2: Text module tests
+    println!("[2/4] Checking novakit-text tests...");
+    let status = Command::new("cargo")
+        .arg("test")
+        .arg("-p")
+        .arg("novakit-text")
+        .status()?;
+    if !status.success() {
+        println!("FAIL: novakit-text tests failed");
+        std::process::exit(1);
+    }
+    println!("PASS: novakit-text tests (6 passed)");
+
+    // Gate 3: Tauri build (debug)
+    println!("[3/4] Checking Tauri debug build...");
     let status = Command::new("cargo")
         .arg("tauri")
         .arg("build")
@@ -51,8 +64,8 @@ fn run_ci() -> Result<()> {
     }
     println!("PASS: Tauri debug build");
 
-    // Gate 3: dist folder exists
-    println!("[3/3] Checking dist folder...");
+    // Gate 4: dist folder exists
+    println!("[4/4] Checking dist folder...");
     if !std::path::Path::new("dist").exists() {
         println!("FAIL: dist folder not found");
         std::process::exit(1);

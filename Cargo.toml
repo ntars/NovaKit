@@ -1,5 +1,5 @@
 [workspace]
-members = ["xtask", "src-tauri"]
+members = ["xtask", "src-tauri", "crates/novakit-text"]
 resolver = "2"
 
 [workspace.dependencies]
