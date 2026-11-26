@@ -1,6 +1,8 @@
-[package]
-name = "novakit"
-version = "0.1.0"
-edition = "2024"
+[workspace]
+members = ["xtask", "src-tauri"]
+resolver = "2"
 
-[dependencies]
+[workspace.dependencies]
+anyhow = "1.0"
+clap = { version = "4.0", features = ["derive"] }
+semver = "1.0"
