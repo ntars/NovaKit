@@ -2160,6 +2160,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "novakit-media"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "serde",
+]
+
+[[package]]
 name = "novakit-text"
 version = "0.1.0"
 dependencies = [
