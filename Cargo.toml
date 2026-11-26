@@ -1,5 +1,5 @@
 [workspace]
-members = ["xtask", "src-tauri", "crates/novakit-text", "crates/novakit-file", "crates/novakit-image", "crates/novakit-clipboard", "crates/novakit-media"]
+members = ["xtask", "src-tauri", "crates/novakit-text", "crates/novakit-file", "crates/novakit-image", "crates/novakit-clipboard", "crates/novakit-media", "crates/novakit-plugin"]
 resolver = "2"
 
 [workspace.dependencies]
