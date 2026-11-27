@@ -2,7 +2,7 @@
 
 # NovaKit
 
-**仓库描述**：`装完系统，只装这一套：离线、免登录的桌面小工具集合，Rust + Tauri 2 构建 | One kit, day one: an offline, account-free desktop utility suite built with Rust and Tauri 2.`
+**仓库描述**：`装完系统只装这一套：离线、免登录的桌面小工具集合，Rust + Tauri 2 构建 | One kit, day one: an offline, account-free desktop utility suite built with Rust and Tauri 2.`
 
 **话题标签**：`rust` `tauri` `desktop-app` `utilities` `offline` `privacy` `productivity` `toolkit` `macos` `cross-platform` `no-account` `local-first` `file-tools` `image-tools` `developer-tools` `clipboard` `screenshot` `zero-telemetry` `open-source` `apache-license`
 
